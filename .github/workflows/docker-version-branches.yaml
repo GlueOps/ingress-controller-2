@@ -4,7 +4,7 @@ permissions:
 on:
   push:
     branches:
-      - 0-[0-9]+-*
+      - new-image
 
 jobs:
   publish:
@@ -26,7 +26,7 @@ jobs:
         with:
           # list of Docker images to use as base name for tags
           images: |
-            pomerium/ingress-controller
+            ghcr.io/glueops/ingress-controller-2
           # generate Docker tags based on the following events/attributes
           tags: |
             type=ref,event=branch
@@ -41,6 +41,7 @@ jobs:
       - name: Login to DockerHub
         uses: docker/login-action@9780b0c442fbb1117ed29e0efdff1e18412f7567
         with:
+          registry: ghcr.io 
           username: ${{ secrets.DOCKERHUB_USER }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
