@@ -29,7 +29,7 @@ jobs:
 
       - name: Create Pull Request
         if: ${{ steps.git-diff.outputs.changed }} == 'true'
-        uses: peter-evans/create-pull-request@67ccf781d68cd99b580ae25a5c18a1cc84ffff1f
+        uses: peter-evans/create-pull-request@58258f452b6c22066ed351398c99510be8470f5a
         with:
           author: GitHub Actions <apparitor@users.noreply.github.com>
           body: "This PR updates the Pomerium Core to the latest commit in main"
