@@ -20,7 +20,7 @@ jobs:
           private_key: ${{ secrets.BACKPORT_APP_PRIVATE_KEY }}
 
       - name: Backport
-        uses: pomerium/backport@e2ffd4c5a70730dfd19046859dfaf366e3de6466
+        uses: pomerium/backport@98051d9820d4bc9902716f750f5866114c08b7e4
         with:
           github_token: ${{ steps.generate_token.outputs.token }}
           title_template: "{{originalTitle}}"
