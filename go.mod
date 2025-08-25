@@ -13,7 +13,7 @@ require (
 	github.com/google/uuid v1.6.0
 	github.com/gosimple/slug v1.15.0
 	github.com/hashicorp/go-multierror v1.1.1
-	github.com/hashicorp/go-set/v3 v3.0.0
+	github.com/hashicorp/go-set/v3 v3.0.1
 	github.com/iancoleman/strcase v0.3.0
 	github.com/martinlindhe/base36 v1.1.1
 	github.com/open-policy-agent/opa v1.1.0
