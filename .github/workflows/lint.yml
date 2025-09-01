@@ -24,7 +24,7 @@ jobs:
       - run: make pomerium-ui
 
       - name: Run golangci-lint
-        uses: golangci/golangci-lint-action@ec5d18412c0aeab7936cb16880d708ba2a64e1ae
+        uses: golangci/golangci-lint-action@3c28b2cb75e1933038fca129074454e12a0f45d8
         with:
           version: v1.60.1
           args: --timeout=10m
